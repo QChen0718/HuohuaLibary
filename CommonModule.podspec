@@ -6,16 +6,15 @@ Pod::Spec.new do |spec|
   spec.version      = "1.0.0"
   spec.summary      = "A short description of CommonModule."
 
-  spec.description  = <<-DESC
-                   DESC
+  spec.description  = "私有库"
 
   spec.homepage     = "https://github.com/QChen0718/HuohuaLibary"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
 
-  spec.license      = "MIT (example)"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  #spec.license      = "MIT (example)"
+   spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
 
