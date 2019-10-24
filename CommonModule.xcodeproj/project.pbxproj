@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C13983A23614EF500696238 /* CommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C13983923614EF500696238 /* CommonView.swift */; };
 		4C7057F0235DA6B100F4B693 /* CommonModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7057E6235DA6B100F4B693 /* CommonModule.framework */; };
 		4C7057F5235DA6B100F4B693 /* CommonModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7057F4235DA6B100F4B693 /* CommonModuleTests.swift */; };
 		4C7057F7235DA6B100F4B693 /* CommonModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C7057E9235DA6B100F4B693 /* CommonModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,6 +29,7 @@
 		00EE37727FDF8C1FADDC25B2 /* Pods-CommonModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonModule.release.xcconfig"; path = "Target Support Files/Pods-CommonModule/Pods-CommonModule.release.xcconfig"; sourceTree = "<group>"; };
 		30D0DD844044CA45FB186500 /* Pods-CommonModuleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonModuleTests.release.xcconfig"; path = "Target Support Files/Pods-CommonModuleTests/Pods-CommonModuleTests.release.xcconfig"; sourceTree = "<group>"; };
 		454F92DA25EC2206E41B9155 /* Pods_CommonModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C13983923614EF500696238 /* CommonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonView.swift; sourceTree = "<group>"; };
 		4C7057E6235DA6B100F4B693 /* CommonModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7057E9235DA6B100F4B693 /* CommonModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonModule.h; sourceTree = "<group>"; };
 		4C7057EA235DA6B100F4B693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				4C7057E9235DA6B100F4B693 /* CommonModule.h */,
 				4C7057EA235DA6B100F4B693 /* Info.plist */,
+				4C13983923614EF500696238 /* CommonView.swift */,
 			);
 			path = CommonModule;
 			sourceTree = "<group>";
@@ -115,7 +118,6 @@
 				D302520F241B7575BD837BE4 /* Pods-CommonModuleTests.debug.xcconfig */,
 				30D0DD844044CA45FB186500 /* Pods-CommonModuleTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -183,6 +185,7 @@
 				TargetAttributes = {
 					4C7057E5235DA6B100F4B693 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					4C7057EE235DA6B100F4B693 = {
 						CreatedOnToolsVersion = 11.0;
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C13983A23614EF500696238 /* CommonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DF1625EB7A2C1C1CBAF77389 /* Pods-CommonModule.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -438,6 +443,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaohu.CommonModule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -447,6 +453,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00EE37727FDF8C1FADDC25B2 /* Pods-CommonModule.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -471,6 +478,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D302520F241B7575BD837BE4 /* Pods-CommonModuleTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CommonModuleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -489,6 +497,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 30D0DD844044CA45FB186500 /* Pods-CommonModuleTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CommonModuleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
